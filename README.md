@@ -14,7 +14,6 @@ Users can:
 
 ## 🚀 Live Demo
 [![Deploy to GitHub Pages](https://img.shields.io/github/deployments/phaiza/shopping-cart-redux-store/github-pages?label=Deployed%20on%20GitHub%20Pages)](https://phaiza.github.io/shopping-cart-redux-store/)
-👉 [View the App on GitHub Pages](https://phaiza.github.io/shopping-cart-redux-store/)
 
 ---
 
