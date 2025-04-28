@@ -1,55 +1,60 @@
-# React + TypeScript + Vite
+# 🛒 Shopping Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React + Redux Toolkit + TypeScript** shopping cart application, built using **Vite** and deployed with **GitHub Pages** via **GitHub Actions**.
 
-Currently, two official plugins are available:
+Users can:
+- View a list of products
+- Add products to their cart
+- Increase or decrease product quantities
+- Remove products from their cart
+- Navigate between Home and Cart pages
+- See real-time cart updates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 [View the App on GitHub Pages](https://phaiza.github.io/shopping-cart-redux-store/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** (with functional components and hooks)
+- **Redux Toolkit** (for state management)
+- **TypeScript** (for strong typing)
+- **Vite** (for fast dev build)
+- **React Router** (for routing)
+- **GitHub Actions** (for CI/CD deployment)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# shopping-cart-redux-store
+---
+
+## 🏗️ Project Structure
+src/
+├── app/                  # Redux store setup
+├── components/            # Reusable components (ProductList, etc.)
+├── features/              # Redux slices (cart, products)
+├── pages/                 # Main pages (Home, Cart)
+├── types/                 # TypeScript types
+├── App.tsx                # Main application
+├── main.tsx               # Entry point
+
+---
+
+## 🧩 Key Features
+
+- **Add to Cart** with live quantity updates
+- **Remove from Cart** with smart quantity handling
+- **Navigation** between Home and Cart pages
+- **Real-time state updates** through Redux DevTools
+- **CI/CD pipeline** with GitHub Actions → automatic deploy to GitHub Pages
+
+---
+
+## 📦 Installation and Setup Instructions
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/phaiza/shopping-cart-redux-store.git
+cd shopping-cart-redux-store
