@@ -25,7 +25,8 @@ const ProductList = () => {
       <h2>Products</h2>
       <ul>
         {products.map((product) => {
-          const isInCart = cartItems.some((item) => item.id === product.id);
+          const cartItem = cartItems.find((item) => item.id === product.id);
+          const quantity = cartItem ? cartItem.quantity : 0;
           return (
             <li key={product.id}>
               {product.name} — ${product.price}
@@ -33,9 +34,9 @@ const ProductList = () => {
                 style={{ marginLeft: '10px' }}
                 onClick={() => handleAddToCart(product)}
               >
-                Add to Cart
+                Add to Cart{quantity > 0 && ` (${quantity})`}
               </button>
-              {isInCart && (
+              {quantity > 0 && (
                 <button
                   style={{ marginLeft: '10px' }}
                   onClick={() => handleRemoveFromCart(product.id)}
