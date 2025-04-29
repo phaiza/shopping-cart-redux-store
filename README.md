@@ -57,3 +57,23 @@ src/
 ```bash
 git clone https://github.com/phaiza/shopping-cart-redux-store.git
 cd shopping-cart-redux-store
+```
+2.	Install dependencies:
+```bash
+npm install
+```
+3.	Start the development server:
+```bash
+npm run dev
+```
+4.	Build for production:
+```bash
+npm run build
+```
+
+## 🚀 Deployment (CI/CD)
+
+This project uses GitHub Actions to automatically build and deploy to GitHub Pages whenever changes are pushed to the main branch.
+
+Workflow file:
+.github/workflows/deploy.yml
