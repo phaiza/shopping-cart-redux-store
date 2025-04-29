@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <circle cx="32" cy="32" r="32" fill="#87CEFA"/> <!-- Light blue background -->
+  <g transform="translate(10,20)">
+    <rect x="10" y="0" width="24" height="18" rx="2" ry="2" fill="#5D4037"/> <!-- Cart -->
+    <circle cx="14" cy="20" r="2" fill="#333"/> <!-- Left wheel -->
+    <circle cx="30" cy="20" r="2" fill="#333"/> <!-- Right wheel -->
+    <rect x="12" y="-6" width="8" height="8" rx="1" ry="1" fill="#FFC107"/> <!-- Yellow box -->
+    <rect x="22" y="-6" width="8" height="8" rx="1" ry="1" fill="#FF5722"/> <!-- Orange box -->
+  </g>
+</svg>
